@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp">
+
+
+            <ImageView
+                android:id="@+id/img_notrip"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notrip" />
+
+            <TextView
+                android:id="@+id/tv_tripdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip Date"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_below="@+id/img_notrip"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tripcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/tv_triploc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="12 Loc"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_below="@id/tv_tripcity"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_tripday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="3 Days"
+            android:textSize="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_below="@id/tv_triploc"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_triptravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Travellers"
+            android:textSize="@dimen/_14sdp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_tripday"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"
+            android:layout_below="@+id/tv_triptravel"
+            android:layout_marginTop="@dimen/_8sdp"/>
+    </RelativeLayout>
+
+</layout>

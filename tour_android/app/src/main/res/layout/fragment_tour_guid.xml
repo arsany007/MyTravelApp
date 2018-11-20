@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TourGuidFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_tour_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_tour_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_aboutcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****Facts About the City***"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_tour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_guidemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_tour_main"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="GuideMode (Auto/Manual)"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <Switch
+        android:id="@+id/switch_guidmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear_tour_main"
+        android:layout_toRightOf="@id/tv_guidemode"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"/>
+
+    <ScrollView
+        android:layout_below="@+id/switch_guidmode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_tour"
+                    android:layout_margin="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

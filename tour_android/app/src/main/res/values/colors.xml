@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#adb4df</color>
+    <color name="colorPrimaryDark">#adb4df</color>
+    <color name="colorAccent">#a3aad1</color>
+    
+    <color name="dark_gray">#33000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rounded_border">#85b9be</color>
+    <color name="send_color">#8fc6cb</color>
+    <color name="remember_color">#4d7174</color>
+    <color name="nav_line_view">#a6cfdc</color>
+    <color name="black">#000000</color>
+    <color name="create_profile">#5f8686</color>
+    <color name="profile_background">#83e9ce</color>
+    <color name="register_text">#7f9cae</color>
+    <color name="alreadysign_text">#4c6a6d</color>
+
+</resources>

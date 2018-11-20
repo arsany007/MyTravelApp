@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp">
+            <ImageView
+                android:id="@+id/img_tour_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tourrow"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Name"
+                android:layout_toRightOf="@id/img_tour_row"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_rating_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating : "
+                android:layout_toRightOf="@id/img_tour_row"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_below="@+id/tv_place"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.3"
+                android:layout_below="@+id/tv_place"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@id/tv_rating_lbl"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_distance_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance : "
+                android:layout_toRightOf="@id/img_tour_row"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_below="@+id/tv_rating"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150m"
+                android:layout_toRightOf="@id/tv_distance_lbl"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_below="@+id/tv_rating"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_headphone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_place"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_head"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

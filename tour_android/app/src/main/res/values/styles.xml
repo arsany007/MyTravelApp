@@ -1,0 +1,44 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="et_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:paddingBottom">@dimen/_11sdp</item>
+        <item name="android:paddingTop">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:paddingLeft">@dimen/_16sdp</item>
+        <item name="android:paddingRight">@dimen/_16sdp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="tv_menu_items">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:paddingLeft">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

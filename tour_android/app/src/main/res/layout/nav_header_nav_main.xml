@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/_16sdp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:src="@drawable/ic_logos" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/menu_loginprofile"
+                style="@style/tv_menu_items"
+                android:drawableStart="@drawable/ic_register_white"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="@string/login_profile" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+            <TextView
+                android:id="@+id/menu_discoverarea"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_discoverarea"
+                android:text="@string/discover_area" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+
+            <TextView
+                android:id="@+id/menu_plantrip"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_plantrip"
+                android:text="@string/plan_trip" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+            <TextView
+                android:id="@+id/menu_tourguide"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_tourguid"
+                android:text="@string/tour_guide" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+
+            <TextView
+                android:id="@+id/menu_friendhangout"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_friendhangout"
+                android:text="@string/friends_hangout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+            <TextView
+                android:id="@+id/menu_share"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_share"
+                android:text="@string/share" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/nav_line_view" />
+
+            <TextView
+                android:id="@+id/menu_setting"
+                style="@style/tv_menu_items"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_setting"
+                android:text="@string/settings" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>
